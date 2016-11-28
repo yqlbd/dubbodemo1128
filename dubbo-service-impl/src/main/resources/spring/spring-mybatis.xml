@@ -18,10 +18,12 @@
 
 
     <!-- 引入配置文件 -->
-    <bean id="propertyConfigurer"
-          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:properties/jdbc.properties" />
-    </bean>
+    <!--<bean id="propertyConfigurer"-->
+          <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="location" value="classpath:properties/jdbc.properties" />-->
+    <!--</bean>-->
+    <context:property-placeholder location="classpath:properties/*.properties"/>
+
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
@@ -53,7 +55,7 @@
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.test.dao" />
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <!--<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>-->
     </bean>
 
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->

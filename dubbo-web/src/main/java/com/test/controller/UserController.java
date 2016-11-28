@@ -4,9 +4,8 @@ import com.test.bean.User;
 import com.test.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import javax.servlet.http.HttpServletRequest;
 
 
 /**
@@ -20,9 +19,9 @@ public class UserController {
 
 
     @RequestMapping("/showDubboUser.action")
-    public String showDubboUser(HttpServletRequest request){
+    public String showDubboUser(Model model) {
         User user = userService.getDubboUser();
-        request.setAttribute("user",user);
+        model.addAttribute("user", user);
         return "showUser";
     }
 

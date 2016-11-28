@@ -205,7 +205,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.1</version>
                 <configuration>
-                    <port>8012</port>
+                    <port>8014</port>
                     <path>/dubboservice</path>
                 </configuration>
             </plugin>
