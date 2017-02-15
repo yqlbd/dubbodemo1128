@@ -34,6 +34,14 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
+            <scope>test</scope>
+        </dependency>
+
         <!-- 导入java ee jar 包 -->
         <dependency>
             <groupId>javax</groupId>
@@ -132,6 +140,12 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.1</version>
+        </dependency>
+        <!--API依赖-->
+        <dependency>
+            <groupId>com.deppon.foss</groupId>
+            <version>0.0.1-express-SNAPSHOT</version>
+            <artifactId>pkp-pricing-api</artifactId>
         </dependency>
 
     </dependencies>
