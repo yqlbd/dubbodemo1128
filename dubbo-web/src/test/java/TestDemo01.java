@@ -1,3 +1,4 @@
+
 import com.deppon.foss.module.pickup.pricing.api.server.service.IProductService;
 import com.deppon.foss.module.pickup.pricing.api.shared.domain.ProductEntity;
 import org.junit.Test;
@@ -6,7 +7,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -20,7 +20,7 @@ public class TestDemo01 {
     private IProductService productService;
 
     @Test
-    public void test01(){
+    public void test01() {
 //        ProductEntity productById = productService.findProductById("123");
 //        System.out.println(productById);
 //        Date lastModifyTime = productService.getLastModifyTime();

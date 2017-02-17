@@ -26,6 +26,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>1.8.5</version>
+        </dependency>
 
         <!--springMVC-->
         <dependency>
@@ -145,7 +150,7 @@
         <dependency>
             <groupId>com.deppon.foss</groupId>
             <version>0.0.1-express-SNAPSHOT</version>
-            <artifactId>pkp-pricing-api</artifactId>
+            <artifactId>pkp-pricing-dubbo-api</artifactId>
         </dependency>
 
     </dependencies>
