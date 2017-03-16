@@ -13,7 +13,7 @@
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <dubbo:registry address="zookeeper://10.230.28.66:2181?backup=10.230.28.67:2181,10.230.28.68:2181"/>
 
-    <dubbo:reference id="productService" interface="com.deppon.foss.module.pickup.pricing.api.server.service.IProductService" group="dev"/>
+    <dubbo:reference id="productService" interface="com.deppon.foss.module.pickup.pricing.api.server.service.IProductService" group="dev" check="false"/>
 
 
 </beans>
