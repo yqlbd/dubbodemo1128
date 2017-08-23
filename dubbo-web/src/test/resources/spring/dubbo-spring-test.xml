@@ -10,10 +10,11 @@
 
     <!-- 消费方应用信息，用于计算依赖关系 -->
     <dubbo:application name="dubbo-consumer"/>
+
     <!-- 使用zookeeper注册中心暴露服务地址 -->
-    <dubbo:registry address="zookeeper://10.230.28.66:2181?backup=10.230.28.67:2181,10.230.28.68:2181"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
-    <dubbo:reference id="productService" interface="com.deppon.foss.module.pickup.pricing.api.server.service.IProductService" group="dev"/>
-
+    <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
+    <dubbo:reference id="persUserInfoService" interface="com.uc56.core.server.cms.service.IPersUserInfoService"/>
 
 </beans>

@@ -12,7 +12,9 @@
 </head>
 <body>
 <h1>姓名：${user.name}</h1>
-<h1>密码：${user.password}</h1>
-<h1>年龄：${user.age}</h1>
+<h1>性别：${user.gender}</h1>
+<h1>证件类别：${user.userCardType}</h1>
+<h1>证件号码：${user.userCardId}</h1>
+<h1>住址：${user.papersStreet}</h1>
 </body>
 </html>
